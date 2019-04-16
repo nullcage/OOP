@@ -12,8 +12,8 @@ public:
 	double size_w;
 	double price;
 
-	Tiles() : brand("Unnamed"), size_h(0.0), size_w(0.0), price(0.0) {}; // empty constructor
-	Tiles(std::string c_brand, double c_size_h, double c_size_w, double c_price) // inititalize constructor
+	Tiles() : brand("Unnamed"), size_h(0.0), size_w(0.0), price(0.0) {}; // initialize constructor
+	Tiles(std::string c_brand, double c_size_h, double c_size_w, double c_price) // copy inititalize constructor
 	{
 		brand = c_brand;
 		size_h = c_size_h;
@@ -23,7 +23,7 @@ public:
 
 	void getTilesData();
 
-	~Tiles() {} // empty destructor
+	~Tiles() {} // destructor
 };
 
 void SECOND_TASK();
