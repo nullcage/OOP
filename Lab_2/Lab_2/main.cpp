@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <ctime>
 #include "Functions.h"
 
@@ -10,27 +10,27 @@ int main()
 	system("cls");
 	srand((unsigned)time(NULL));
 
-	// Заполнение массива случайными числами
+	// Р—Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	int array[GLOBAL_ARRAY_SIZE];
 	for (int i = 0; i < GLOBAL_ARRAY_SIZE; ++i)
 		array[i] = (rand() % 10) + 1;
 
-	std::cout << "Начальный массив: ";
+	std::cout << "РќР°С‡Р°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ: ";
 	for (int i = 0; i < GLOBAL_ARRAY_SIZE; ++i)
 		std::cout << array[i] << " ";
 	std::cout << "\n";
 
 
-	std::cout << "\n[ Задание #1 ]\n";
+	std::cout << "\n[ Р—Р°РґР°РЅРёРµ #1 ]\n";
 	int (*pointer1)(int[]) = &sum;
 	int (*pointer2)(int[]) = &mult;
-	std::cout << "Сумма элементов массива равна: " << pointer1(array) << '\n';
-	std::cout << "Произведение элементов массива равно: " << pointer2(array) << '\n';
+	std::cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР°: " << pointer1(array) << '\n';
+	std::cout << "РџСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅРѕ: " << pointer2(array) << '\n';
 
-	std::cout << "\n[ Задание #2 ]\n";
+	std::cout << "\n[ Р—Р°РґР°РЅРёРµ #2 ]\n";
 	void (*bar)(int[]) = foo(array);
 	bar(array);
-	std::cout << "Итоговый массив: ";
+	std::cout << "РС‚РѕРіРѕРІС‹Р№ РјР°СЃСЃРёРІ: ";
 	for (int i = 0; i < GLOBAL_ARRAY_SIZE; ++i)
 		std::cout << array[i] << " ";
 	std::cout << '\n';

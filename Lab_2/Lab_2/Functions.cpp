@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "Functions.h"
 
 const int GLOBAL_ARRAY_SIZE = 5;
@@ -19,9 +19,9 @@ int mult(int array[])
 	return totalMult;
 }
 
-void option1(int array[]) // инвертировать массив
+void option1(int array[]) // РёРЅРІРµСЂС‚РёСЂРѕРІР°С‚СЊ РјР°СЃСЃРёРІ
 {
-	std::cout << "Инвертируем массив...\n";
+	std::cout << "РРЅРІРµСЂС‚РёСЂСѓРµРј РјР°СЃСЃРёРІ...\n";
 	int temp[GLOBAL_ARRAY_SIZE];
 	for (int i = 0; i < GLOBAL_ARRAY_SIZE; i++)
 		temp[i] = array[GLOBAL_ARRAY_SIZE - i - 1];
@@ -29,9 +29,9 @@ void option1(int array[]) // инвертировать массив
 		array[i] = temp[i];
 }
 
-void option2(int array[]) // возрастающий порядок
+void option2(int array[]) // РІРѕР·СЂР°СЃС‚Р°СЋС‰РёР№ РїРѕСЂСЏРґРѕРє
 {
-	std::cout << "Сортируем массив по возрастанию...\n";
+	std::cout << "РЎРѕСЂС‚РёСЂСѓРµРј РјР°СЃСЃРёРІ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ...\n";
 	int temp;
 	for (int i = 0; i < GLOBAL_ARRAY_SIZE - 1; i++)
 	{
@@ -47,9 +47,9 @@ void option2(int array[]) // возрастающий порядок
 	}
 }
 
-void option3(int array[]) // убывающий порядок
+void option3(int array[]) // СѓР±С‹РІР°СЋС‰РёР№ РїРѕСЂСЏРґРѕРє
 {
-	std::cout << "Сортируем массив по убыванию...\n";
+	std::cout << "РЎРѕСЂС‚РёСЂСѓРµРј РјР°СЃСЃРёРІ РїРѕ СѓР±С‹РІР°РЅРёСЋ...\n";
 	int temp;
 	for (int i = 0; i < GLOBAL_ARRAY_SIZE - 1; i++) 
 	{
