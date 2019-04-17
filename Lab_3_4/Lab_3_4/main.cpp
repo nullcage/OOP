@@ -12,13 +12,13 @@ int main()
 	int taskNumber{ -1 };
 	do
 	{
-		std::cout << "Введите номер желаемого задания: ";
+		std::cout << "Введите номер желаемого задания (0 чтобы выйти): ";
 		std::cin >> taskNumber;
 
 		switch (taskNumber)
 		{
 			case 0:
-				break;
+				return 0;
 			case 1:
 				FIRST_TASK();
 				break;

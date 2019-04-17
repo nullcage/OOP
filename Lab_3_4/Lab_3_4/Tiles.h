@@ -1,4 +1,4 @@
-#ifndef TILES_H
+﻿#ifndef TILES_H
 #define TILES_H
 
 #include <iostream>
@@ -12,18 +12,24 @@ public:
 	double size_w;
 	double price;
 
-	Tiles() : brand("Unnamed"), size_h(0.0), size_w(0.0), price(0.0) {}; // initialize constructor
-	Tiles(std::string c_brand, double c_size_h, double c_size_w, double c_price) // copy inititalize constructor
+	Tiles() {} // default constructor
+
+	Tiles(std::string t_brand, double t_size_h, double t_size_w, double t_price) // initialize constructor
+		: brand(t_brand), size_h(t_size_h), size_w(t_size_w), price(t_price) 
 	{
-		brand = c_brand;
-		size_h = c_size_h;
-		size_w = c_size_w;
-		price = c_price;
+	} 
+
+	Tiles(const Tiles &copy) // copy constructor
+	{
+		brand = copy.brand;
+		size_h = copy.size_h;
+		size_w = copy.size_w;
+		price = copy.price;
 	}
 
 	void getTilesData();
 
-	~Tiles() {} // destructor
+	~Tiles() {} // empty destructor
 };
 
 void SECOND_TASK();

@@ -4,8 +4,8 @@
 void SECOND_TASK()
 {
 	std::cout << "\n================================= [ Задание #2 ] =================================\n";
-	Tiles toilet{ "CoolPlitka", 2.5, 2.5, 100.0 };
-	Tiles bathroom{ "Plitka v2", 3.2, 3.2, 100.0 };
+	Tiles toilet{ "Plitka that is worse", 2.0, 5.5, 120.5 };
+	Tiles bathroom{ "Plitka that is better", 6.0, 4.0, 100.0 };
 	toilet.getTilesData(); // вывод значений
 	bathroom.getTilesData(); // вывод значений
 	std::cout << "==================================================================================\n\n";

@@ -4,17 +4,20 @@
 class Vector
 {
 public:
-	double m_x, m_y;
+	double m_x;
+	double m_y;
 
-	Vector(double x, double y) // constructor
+	Vector() {} // default constructor
+
+	Vector(double x, double y) // initialize constructor
+		: m_x(x), m_y(y)
 	{
-		m_x = x;
-		m_y = y;
 	}
-	Vector() // second constructor if no arguments passed
+
+	Vector(const Vector &copy) // copy constructor
 	{
-		m_x = 0;
-		m_y = 0;
+		m_x = copy.m_x;
+		m_y = copy.m_y;
 	}
 
 	double getVectorModule();
