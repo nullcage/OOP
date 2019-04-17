@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{3089ABA3-16C8-4751-A05F-C3D4D515E93A}</ProjectGuid>
+    <ProjectGuid>{ABD67146-CB44-4945-A01A-1149EB233D36}</ProjectGuid>
     <RootNamespace>Lab1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -123,14 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\Lab_1\laboratornaya_1\Complex.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\Lab_1\laboratornaya_1\main.cpp" />
+    <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\Lab_1\laboratornaya_1\Complex.h" />
+    <ClInclude Include="Complex.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\Desktop\Lab_1\laboratornaya_1\complex.txt" />
+    <Text Include="complex.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
