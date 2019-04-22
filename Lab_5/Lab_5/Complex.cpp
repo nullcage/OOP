@@ -62,7 +62,8 @@ Complex& Complex::operator--()
 Complex Complex::operator++(int)
 {
 	Complex temp(re, im);
-	++(*this);
+	re++;
+	im++;
 	return temp;
 }
 
@@ -70,6 +71,7 @@ Complex Complex::operator++(int)
 Complex Complex::operator--(int)
 {
 	Complex temp(re, im);
-	--(*this);
+	re--;
+	im--;
 	return temp;
 }
