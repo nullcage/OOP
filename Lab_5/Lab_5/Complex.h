@@ -19,8 +19,10 @@ public:
 	friend std::ostream& operator<< (std::ostream& out, const Complex& comp);
 	friend std::istream& operator>> (std::istream& in, Complex& comp);
 	Complex& operator= (const Complex &complex);
-	Complex& operator++();
-	Complex& operator--();
+	Complex& operator++(); // prefix
+	Complex& operator--(); // prefix
+	Complex operator++(int); // postfix
+	Complex operator--(int); // postfix
 
 	~Complex() {} // destructor
 };

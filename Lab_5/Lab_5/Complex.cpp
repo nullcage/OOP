@@ -42,7 +42,7 @@ Complex& Complex::operator= (const Complex &complex)
 	return *this;
 }
 
-// Перегрузка оператора инкремента ++ (postfix)
+// Перегрузка оператора инкремента ++ (prefix)
 Complex& Complex::operator++()
 {
 	++re;
@@ -50,10 +50,26 @@ Complex& Complex::operator++()
 	return *this;
 }
 
-// Перегрузка оператора декремента -- (postfix)
+// Перегрузка оператора декремента -- (prefix)
 Complex& Complex::operator--()
 {
 	--re;
 	--im;
 	return *this;
+}
+
+// Перегрузка оператора инкремента ++ (postfix)
+Complex Complex::operator++(int)
+{
+	Complex temp(re, im);
+	++(*this);
+	return temp;
+}
+
+// Перегрузка оператора декремента -- (postfix)
+Complex Complex::operator--(int)
+{
+	Complex temp(re, im);
+	--(*this);
+	return temp;
 }
