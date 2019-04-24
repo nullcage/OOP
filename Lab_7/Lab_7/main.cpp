@@ -5,12 +5,16 @@
 
 int main()
 {
-	//Human human;
-	Boss boss;
-	Student student;
+	system("chcp 1251");
+	system("cls");
 
+	Boss boss{ "Воронов", "Андрей", "Александрович", 34, 15};
+	Student student{ "Кужахметова", "Арина", "Сериковна", 18, true };
+	Human* human = &student;
+
+	human->print();
+	std::cout << '\n';
 	boss.print();
-	student.print();
 
 	return 0;
 }

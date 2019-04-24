@@ -12,15 +12,12 @@ protected:
 	int age;
 
 public:
-	Human(){}
-	Human(std::string tsurname, std::string tname, std::string tmidname, int tage)
-		: surname(tsurname), name(tname), midname(tmidname), age(tage)
-	{
-	}
+	Human() {}
+	Human(std::string tsurname, std::string tname, std::string tmidname, int tage);
 
 	virtual void print() = 0;
 
-	~Human() {}
+	virtual ~Human() {}
 };
 
 #endif

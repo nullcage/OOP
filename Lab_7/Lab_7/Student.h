@@ -9,7 +9,12 @@ protected:
 	bool on_lesson;
 
 public:
-	virtual void print() { std::cout << "Student\n"; }
+	Student() {}
+	Student(std::string tsurname, std::string tname, std::string tmidname, int tage, bool ton_lesson);
+
+	virtual void print() override;
+
+	~Student() {}
 };
 
 #endif
