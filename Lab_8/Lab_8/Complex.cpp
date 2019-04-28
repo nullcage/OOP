@@ -1,9 +1,9 @@
-#include "Complex.h"
+ï»¿#include "Complex.h"
 #include <iostream>
 
 std::istream& operator>> (std::istream& in, Complex& comp)
 {
-	std::cout << "Ââåäèòå êîìïëåêñíîå ÷èñëî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	in >> comp.m_re >> comp.m_im;
 	return in;
 }
