@@ -1,4 +1,4 @@
-#include "Student.h"
+ï»¿#include "Student.h"
 #include <iostream>
 #include <string>
 
@@ -10,6 +10,6 @@ std::ostream& operator<< (std::ostream& out, const Student& stud)
 
 void Student::enterStudentInfo()
 {
-	std::cout << "Ââåäèòå ÔÈÎ ñòóäåíòà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¤Ð˜Ðž ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: ";
 	std::cin >> m_surname >> m_name >> m_midname;
 }
