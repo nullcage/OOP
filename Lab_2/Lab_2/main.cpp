@@ -22,10 +22,10 @@ int main()
 
 
 	std::cout << "\n[ Задание #1 ]\n";
-	int (*pointer1)(int[]) = &sum;
-	int (*pointer2)(int[]) = &mult;
-	std::cout << "Сумма элементов массива равна: " << pointer1(array) << '\n';
-	std::cout << "Произведение элементов массива равно: " << pointer2(array) << '\n';
+	int (*pointer)(int[]) = &sum;
+	std::cout << "Сумма элементов массива равна: " << pointer(array) << '\n';
+	pointer = &mult;
+	std::cout << "Произведение элементов массива равно: " << pointer(array) << '\n';
 
 	std::cout << "\n[ Задание #2 ]\n";
 	void (*bar)(int[]) = foo(array);
