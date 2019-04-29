@@ -12,7 +12,7 @@ public:
 	Student() {}
 	Student(std::string tsurname, std::string tname, std::string tmidname, int tage, bool ton_lesson);
 
-	virtual void print() override;
+	void print() override;
 
 	~Student() {}
 };

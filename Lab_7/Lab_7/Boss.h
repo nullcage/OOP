@@ -12,7 +12,7 @@ public:
 	Boss() {}
 	Boss(std::string tsurname, std::string tname, std::string tmidname, int tage, int tnumber_of_workers);
 
-	virtual void print() override;
+	void print() override;
 
 	~Boss() {}
 };
